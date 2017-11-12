@@ -1,0 +1,63 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <style>
+      code {
+        background: green;
+        border-radius: 4px;
+        display: block;
+        text-align: center;
+        padding: 24px 15px;
+      }
+
+      header,
+      section,
+      footer {
+        margin: 0 1.5% 24px 1.5%;
+      }
+
+      section {
+        float: left;
+        width: 30%;
+
+      }
+
+      .group:before,
+      .group:after {
+        content: "";
+        display: table;
+      }
+
+      .group::after {
+        clear: both;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <code>HEADER</code>
+    </header>
+
+    <div class="group">
+      <section>
+        <code>
+          SECTION
+        </code>
+      </section>
+      <section>
+        <code>
+          SECTION
+        </code>
+      </section><section>
+        <code>
+          SECTION
+        </code>
+      </section>
+    </div>
+
+    <footer>
+      <code>FOOTER</code>
+    </footer>
+  </body>
+</html>
